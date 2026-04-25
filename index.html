@@ -374,10 +374,116 @@ footer{
 }
 
 @media(max-width:768px){
-  .hero-grid{grid-template-columns:1fr;grid-template-rows:220px auto;}
-  .services-grid,.rooms-grid,.hamam-grid,.loc-inner{grid-template-columns:1fr;}
-  .gallery{grid-template-columns:repeat(3,1fr);}
+  /* NAV */
+  nav{padding:0 12px;height:52px;}
+  .nav-logo{font-size:16px;}
   .nav-links a:not(.lang-btn):not(.nav-wa){display:none;}
+  .nav-wa{padding:4px 10px!important;font-size:10px!important;}
+
+  /* HERO */
+  .hero-grid{grid-template-columns:1fr;grid-template-rows:240px auto;}
+  .hero-banner{padding:18px 16px;}
+  .banner-nt{font-size:52px;}
+  .banner-hotel{font-size:15px;}
+  .banner-services,.banner-services2{font-size:13px;}
+
+  /* YELLOW STRIP */
+  .yellow-strip{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    padding:12px 14px;
+  }
+  .ys-div{display:none;}
+  .ys-text{font-size:11px;}
+  .ys-sub{font-size:8px;}
+
+  /* GALLERY */
+  .gallery{grid-template-columns:repeat(2,1fr);max-height:none;}
+  .gal-cell img{height:120px;}
+
+  /* SECTION HEADINGS */
+  .sec-wrap{padding:24px 12px 6px;}
+  .sec-heading{font-size:17px;letter-spacing:2px;padding:5px 16px;}
+  .sec-sub{font-size:10px;}
+
+  /* SERVICES */
+  .services-section{padding:0 0 24px;}
+  .services-grid{
+    grid-template-columns:1fr;
+    padding:12px 12px 0;
+    border-top:3px solid var(--blue);
+  }
+  .srv-col{
+    padding:0 0 16px;
+    border-right:none;
+    border-bottom:2px solid rgba(0,80,200,0.12);
+    margin-bottom:4px;
+  }
+  .srv-col:last-child{border-bottom:none;}
+  .col-heading{font-size:13px;letter-spacing:2px;}
+  .prog{padding:9px 10px;margin-bottom:7px;}
+  .prog-name{font-size:11px;padding:2px 8px;}
+  .prog-items{font-size:8.5px;}
+  .prog-dur{font-size:10px;}
+  .price-badge{font-size:13px;padding:2px 8px;}
+
+  /* MASSAGE */
+  .massage-hdr span{font-size:9px;}
+  .massage-nm{font-size:8.5px;}
+  .time-dot{width:22px;height:12px;}
+
+  /* SKIN */
+  .skin-nm{font-size:11px;}
+  .skin-price{font-size:12px;padding:1px 7px;}
+
+  /* ROOMS */
+  .rooms-section{padding:0 0 24px;}
+  .rooms-grid{
+    grid-template-columns:1fr 1fr;
+    padding:0 10px;
+    gap:4px;
+  }
+  .room-cell.wide{grid-column:span 2;}
+  .room-cell img,.room-cell.wide img{height:140px;}
+  .room-label{font-size:9px;letter-spacing:1px;}
+
+  /* HAMAM */
+  .hamam-section{padding:0 0 24px;}
+  .hamam-grid{
+    grid-template-columns:1fr;
+    padding:0 10px;
+    gap:4px;
+  }
+  .hamam-cell img{height:200px;}
+  .hamam-label{font-size:10px;}
+
+  /* LOCATION */
+  .location-section{padding:24px 12px;}
+  .loc-inner{grid-template-columns:1fr;gap:18px;}
+  .loc-pnum{font-size:16px;}
+  .loc-wa-btn{font-size:13px;padding:10px 16px;}
+  .map-wrap iframe{height:220px;}
+
+  /* FOOTER */
+  footer{flex-direction:column;text-align:center;gap:10px;padding:14px 16px;}
+  .footer-seo{text-align:center;}
+
+  /* FLOAT WA */
+  .wa-float{width:50px;height:50px;bottom:16px;right:16px;}
+
+  /* CTA */
+  .cta-box{padding:11px 12px;}
+  .cta-lbl{font-size:11px;}
+  .cta-wa{font-size:12px;padding:8px 14px;}
+}
+
+@media(max-width:400px){
+  .banner-nt{font-size:44px;}
+  .rooms-grid{grid-template-columns:1fr;}
+  .room-cell.wide{grid-column:span 1;}
+  .yellow-strip{grid-template-columns:1fr;}
+  .gallery{grid-template-columns:repeat(2,1fr);}
 }
 </style>
 </head>
